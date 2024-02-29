@@ -27,8 +27,8 @@ COPY data /home/ubuntu/data
 COPY notebook /home/ubuntu/notebook
 
 # ボリュームとしてマウント
-VOLUME /home/ubuntu/data
-VOLUME /home/ubuntu/notebook
+#VOLUME /home/ubuntu/data
+#VOLUME /home/ubuntu/notebook
 
 CMD ["jupyter-lab", "--no-browser", "--ip=0.0.0.0", "--port=8888", "--NotebookApp.token=''"]
 
